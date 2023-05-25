@@ -1,0 +1,10 @@
+<map id="CONN_BCAP_SERVER" name="CONN_BCAP_SERVER">
+<area shape="rect" id="node1" title="b&#45;CAP server communication object." alt="" coords="167,389,328,415"/>
+<area shape="rect" id="node2" href="$structVEC__OBJECT.html" title="A vector for stacking created objects." alt="" coords="5,275,108,301"/>
+<area shape="rect" id="node3" href="$structBCAP__PACKET.html" title="A type definition for the b&#45;CAP packet." alt="" coords="190,275,305,301"/>
+<area shape="rect" id="node4" href="$structVARIANT.html" title="A type definition for the multi type variable." alt="" coords="208,184,287,211"/>
+<area shape="rect" id="node5" href="$uniontagCY.html" title="A type definition for the signed 64bit integer." alt="" coords="183,95,243,121"/>
+<area shape="rect" id="node6" href="$structSAFEARRAY.html" title="A type definition for the array." alt="" coords="267,95,366,121"/>
+<area shape="rect" id="node7" href="$structSAFEARRAYBOUND.html" title="A type definition for the bound of SAFEARRAY." alt="" coords="243,5,391,32"/>
+<area shape="rect" id="node8" href="$structCONN__PARAM__COMMON.html" title="A type definition for common communication parameters." alt="" coords="329,275,513,301"/>
+</map>
