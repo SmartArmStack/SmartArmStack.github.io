@@ -126,6 +126,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b
 <tr class="memitem:ab5ace978e51f016d8eadfa878a268d30"><td class="memItemLeft" align="right" valign="top"><a id="ab5ace978e51f016d8eadfa878a268d30"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>deinitialize</b> ()=0</td></tr>
 <tr class="separator:ab5ace978e51f016d8eadfa878a268d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e5c3dd3d76c4a593fb04b0937bdb8a"><td class="memItemLeft" align="right" valign="top">virtual VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsas_1_1RobotDriver.html#a70e5c3dd3d76c4a593fb04b0937bdb8a">get_joint_velocities</a> ()</td></tr>
+<tr class="memdesc:a70e5c3dd3d76c4a593fb04b0937bdb8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the joint velocities.  <a href="classsas_1_1RobotDriver.html#a70e5c3dd3d76c4a593fb04b0937bdb8a">More...</a><br /></td></tr>
+<tr class="separator:a70e5c3dd3d76c4a593fb04b0937bdb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92060197a0ac9e8bf7529aca1b79b8de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsas_1_1RobotDriver.html#a92060197a0ac9e8bf7529aca1b79b8de">set_target_joint_velocities</a> (const VectorXd &amp;set_target_joint_velocities_rad_per_second)</td></tr>
+<tr class="memdesc:a92060197a0ac9e8bf7529aca1b79b8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method sets the desired target joint velocities.  <a href="classsas_1_1RobotDriver.html#a92060197a0ac9e8bf7529aca1b79b8de">More...</a><br /></td></tr>
+<tr class="separator:a92060197a0ac9e8bf7529aca1b79b8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6451ba4c9060101b30fad526cb561a9e"><td class="memItemLeft" align="right" valign="top">virtual VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsas_1_1RobotDriver.html#a6451ba4c9060101b30fad526cb561a9e">get_joint_forces</a> ()</td></tr>
+<tr class="memdesc:a6451ba4c9060101b30fad526cb561a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the joint torques.  <a href="classsas_1_1RobotDriver.html#a6451ba4c9060101b30fad526cb561a9e">More...</a><br /></td></tr>
+<tr class="separator:a6451ba4c9060101b30fad526cb561a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -144,7 +153,107 @@ std::atomic_bool *&#160;</td><td class="memItemRight" valign="bottom"><b>break_l
 <tr class="memitem:a5edf6a12e1c16816ab7266183636b3bb"><td class="memItemLeft" align="right" valign="top"><a id="a5edf6a12e1c16816ab7266183636b3bb"></a>
 std::tuple&lt; VectorXd, VectorXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>joint_limits_</b></td></tr>
 <tr class="separator:a5edf6a12e1c16816ab7266183636b3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee1fdcc562287d928140ba23f73a25e"><td class="memItemLeft" align="right" valign="top"><a id="a5ee1fdcc562287d928140ba23f73a25e"></a>
+VectorXd&#160;</td><td class="memItemRight" valign="bottom"><b>joint_velocities_</b></td></tr>
+<tr class="separator:a5ee1fdcc562287d928140ba23f73a25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11bae8f4a7adf204af86c39139b35fd"><td class="memItemLeft" align="right" valign="top"><a id="aa11bae8f4a7adf204af86c39139b35fd"></a>
+VectorXd&#160;</td><td class="memItemRight" valign="bottom"><b>desired_joint_velocities_</b></td></tr>
+<tr class="separator:aa11bae8f4a7adf204af86c39139b35fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30822d11644e1f8e448a7bbf837412a0"><td class="memItemLeft" align="right" valign="top"><a id="a30822d11644e1f8e448a7bbf837412a0"></a>
+VectorXd&#160;</td><td class="memItemRight" valign="bottom"><b>joint_forces_</b></td></tr>
+<tr class="separator:a30822d11644e1f8e448a7bbf837412a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6451ba4c9060101b30fad526cb561a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6451ba4c9060101b30fad526cb561a9e">&#9670;&nbsp;</a></span>get_joint_forces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd sas::RobotDriver::get_joint_forces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method returns the joint torques. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector containing the joint torques. </dd></dl>
+
+</div>
+</div>
+<a id="a70e5c3dd3d76c4a593fb04b0937bdb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70e5c3dd3d76c4a593fb04b0937bdb8a">&#9670;&nbsp;</a></span>get_joint_velocities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd sas::RobotDriver::get_joint_velocities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method returns the joint velocities. </p>
+<dl class="section return"><dt>Returns</dt><dd>A vector containing the joint velocities. </dd></dl>
+
+</div>
+</div>
+<a id="a92060197a0ac9e8bf7529aca1b79b8de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92060197a0ac9e8bf7529aca1b79b8de">&#9670;&nbsp;</a></span>set_target_joint_velocities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sas::RobotDriver::set_target_joint_velocities </td>
+          <td>(</td>
+          <td class="paramtype">const VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>set_target_joint_velocities_rad_per_second</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method sets the desired target joint velocities. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>desired target joint velocities. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>sas_robot_driver/include/sas_robot_driver/<a class="el" href="sas__robot__driver_8h_source.html">sas_robot_driver.h</a></li>
 <li>sas_robot_driver/src/sas_robot_driver.cpp</li>
