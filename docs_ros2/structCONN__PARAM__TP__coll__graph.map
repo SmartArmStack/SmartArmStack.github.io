@@ -1,6 +1,0 @@
-<map id="CONN_PARAM_TP" name="CONN_PARAM_TP">
-<area shape="rect" id="node1" title="TP communication object." alt="" coords="189,95,326,121"/>
-<area shape="rect" id="node2" href="$structCONN__PARAM__COMMON.html" title="A type definition for common communication parameters." alt="" coords="5,5,189,32"/>
-<area shape="rect" id="node3" href="$structTP__FLAGS.html" title="TP flag objects." alt="" coords="213,5,301,32"/>
-<area shape="rect" id="node4" href="$unionRTK__PACKET.html" title="A type definition for the ROBOTalk packet." alt="" coords="325,5,429,32"/>
-</map>

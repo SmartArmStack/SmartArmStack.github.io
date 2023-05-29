@@ -1,7 +1,0 @@
-<map id="sas_robot_driver_denso/src/bcap/dn_common.h" name="sas_robot_driver_denso/src/bcap/dn_common.h">
-<area shape="rect" id="node1" title="Common API file." alt="" coords="230,5,406,47"/>
-<area shape="rect" id="node2" href="$bcap__client_8h.html" title="b&#45;CAP Client API file." alt="" coords="5,95,196,151"/>
-<area shape="rect" id="node4" href="$bcap__server_8h.html" title="b&#45;CAP Server API file." alt="" coords="221,95,415,151"/>
-<area shape="rect" id="node5" href="$dn__tpcomm_8h.html" title="TP communication API file." alt="" coords="440,102,676,143"/>
-<area shape="rect" id="node3" href="$sas__driver__bcap_8h_source.html" title=" " alt="" coords="13,199,189,240"/>
-</map>

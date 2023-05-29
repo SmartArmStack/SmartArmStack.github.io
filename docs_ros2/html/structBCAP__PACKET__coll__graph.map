@@ -1,7 +1,0 @@
-<map id="BCAP_PACKET" name="BCAP_PACKET">
-<area shape="rect" id="node1" title="A type definition for the b&#45;CAP packet." alt="" coords="13,273,127,300"/>
-<area shape="rect" id="node2" href="$structVARIANT.html" title="A type definition for the multi type variable." alt="" coords="31,184,109,211"/>
-<area shape="rect" id="node3" href="$uniontagCY.html" title="A type definition for the signed 64bit integer." alt="" coords="5,95,65,121"/>
-<area shape="rect" id="node4" href="$structSAFEARRAY.html" title="A type definition for the array." alt="" coords="90,95,189,121"/>
-<area shape="rect" id="node5" href="$structSAFEARRAYBOUND.html" title="A type definition for the bound of SAFEARRAY." alt="" coords="65,5,213,32"/>
-</map>
