@@ -167,7 +167,7 @@ const config = {
         without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, 
         fitness for a particular purpose and noninfrigement. 
         
-        Built with Docusaurus by Juan Jose Quiroz Omana.`,
+        Built with Docusaurus by Juan José Quiroz Omaña.`,
       },
       prism: {
         //theme: lightCodeTheme,
