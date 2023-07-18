@@ -43,7 +43,7 @@ const UsingFetch = () => {
 
             <h1 style= {{color:'#000000', textAlign: 'center', fontSize: '25px'}}>
             <p style= {{color:'#000000', textAlign: 'center', fontSize: '15px'}}>Data provided by </p>
-            <a href="https://api.semanticscholar.org/6fe5d5713b626139f880925188980ec95a82a631">
+            <a href="https://api.semanticscholar.org/d431619c141c531dd6620c112af51b4663b7f08b">
             <img alt=""  width="300" height="45" src={useBaseUrl('img/semantic_scholar2.svg')} />
             </a>
             <p style= {{color:'#000000', textAlign: 'center', fontSize: '15px'}}> Citations: {users.citationCount}</p>

@@ -8,18 +8,18 @@ const FeatureList = [
     Svg: require('@site/static/img/computer_capi.svg').default,
     description: (
       <>
-        SmartArmStack is a set of libraries and ROS packages for C++11 (with bindings for Python)
-        to enable fast prototyping on ROS and ROS2.
+        SmartArmStack is a framework for C++11 (with bindings for Python)
+        to enable fast prototyping on ROS and ROS 2.
       </>
     ),
   },
   {
     title: 'Enable Fast Implementation on ROS',
-    Svg: require('@site/static/img/computer_ros.svg').default,
+    Svg: require('@site/static/img/computer_ros2.svg').default,
     description: (
       <>
         Focus on your application. Smart Arm Stack implements for you all 
-        ROS/ROS2 topics and nodes you need to work with your robot, sensor, or actuator. 
+        ROS/ROS 2 topics and nodes you need to work with your robot, sensor, or actuator. 
       </>
     ),
   },

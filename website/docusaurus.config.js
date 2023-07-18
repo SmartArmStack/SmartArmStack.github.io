@@ -7,9 +7,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SmartArmStack',
-  tagline: 'Software for the SmartArm surgical robotic system and related technologies.',
+  tagline: 'Modularized robot control for ROS and ROS 2.',
 
-  favicon: 'img/favicon.ico',
+  //favicon: 'img/favicon.ico',
+  favicon: 'img/logo2.svg',
 
   // Set the production url of your site here
   url: 'https://SmartArmStack.github.io/',
@@ -70,7 +71,7 @@ const config = {
         title: 'Home',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo2.svg',
         },
         items: [
           {
@@ -80,11 +81,7 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          
           {
             label: 'SAS ROS Documentation',
             //to: '/citations',
@@ -119,26 +116,31 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Get started',
                 to: '/docs/intro',
               },
+              {
+                label: 'AISP Platform',
+                href: 'https://aiscienceplatform.github.io/'
+              }
             ],
           },
           {
-            title: 'Community',
+            title: 'Resources',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'DQ Robotics',
+                href: 'https://dqrobotics.github.io/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Learning DQ Robotics',
+                href: 'https://github.com/dqrobotics/learning-dqrobotics-in-matlab',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Learning ROS2',
+                href: 'https://ros2-tutorial.readthedocs.io/en/latest/',
               },
+
 
             ],
           },
