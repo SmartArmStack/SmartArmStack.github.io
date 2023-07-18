@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://SmartArmStack.github.io/blog</id>
+    <title>SmartArmStack Blog</title>
+    <updated>2023-07-18T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://SmartArmStack.github.io/blog"/>
+    <subtitle>SmartArmStack Blog</subtitle>
+    <icon>https://SmartArmStack.github.io/img/logo2.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[First Blog Post]]></title>
+        <id>https://SmartArmStack.github.io/blog/first-blog-post</id>
+        <link href="https://SmartArmStack.github.io/blog/first-blog-post"/>
+        <updated>2023-07-18T00:00:00.000Z</updated>
+        <author>
+            <name>Juan José Quiroz Omaña</name>
+            <uri>https://github.com/juanjqo</uri>
+        </author>
+        <category label="hola" term="hola"/>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://SmartArmStack.github.io/blog/welcome</id>
+        <link href="https://SmartArmStack.github.io/blog/welcome"/>
+        <updated>2023-07-18T00:00:00.000Z</updated>
+        <author>
+            <name>Murilo Marques Marinho</name>
+            <uri>https://github.com/mmmarinho</uri>
+        </author>
+        <category label="hello" term="hello"/>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+</feed>
