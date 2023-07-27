@@ -85,13 +85,13 @@ const config = {
           {
             label: 'SAS ROS Documentation',
             //to: '/citations',
-            href: 'https://smartarmstack.github.io/html/annotated.html',
+            href: '/html/annotated.html',
             position: 'right'
           },
           {
             label: 'SAS ROS2 Documentation',
             //to: '/citations',
-            href: 'https://smartarmstack.github.io/docs_ros2/annotated.html',
+            href: '/docs_ros2/annotated.html',
             position: 'right'
           },
           {
