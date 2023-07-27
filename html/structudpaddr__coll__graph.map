@@ -1,0 +1,5 @@
+<map id="udpaddr" name="udpaddr">
+<area shape="rect" id="node1" title="A type definition for parameters of udp_send and udp_recv." alt="" coords="17,184,92,211"/>
+<area shape="rect" id="node2" href="$structsockaddr__in.html" title=" " alt="" coords="5,95,104,121"/>
+<area shape="rect" id="node3" href="$structin__addr.html" title=" " alt="" coords="19,5,90,32"/>
+</map>
