@@ -2,7 +2,7 @@ version: 1
 project:
   id: c8d93191-431b-42e5-9679-6a16ea9c6f86
   title: "SAS"
-  github: https://github.com/MarinhoLab/SmartArmStack
+  github: https://github.com/SmartArmStack
   authors:
     - name: Murilo M. Marinho
       email: murilo.marinho@manchester.ac.uk
