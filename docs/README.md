@@ -52,3 +52,8 @@ SAS Dependencies
 
 The main dependencies to note are [ros2](https://www.ros.org), [dqrobotics](https://dqrobotics.github.io), [eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page), and [pybind11](https://pybind11.readthedocs.io/en/stable/).
 
+## Older versions
+
+Older (and unsupported) versions are available at:
+- https://github.com/SmartArmStack/smart_arm_stack_lgpl
+- https://github.com/SmartArmStack/smart_arm_stack_researchonly
