@@ -30,7 +30,4 @@ project:
 site:
   template: book-theme
   title: SAS Website
-  options:
-    logo: M3logo_black.png
-    logo_dark: M3logo_white.svg
-    logo_text: "Smart Arm Stack"
+
