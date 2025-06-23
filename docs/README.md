@@ -4,16 +4,32 @@
 
 ### Set up PPA (do only once)
 
+This will add the `SAS` repository to your `apt` sources.
+
 ```commandline
-curl -s --compressed "https://smartarmstack.github.io/smart_arm_stack_ros2/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/smartarmstack_lgpl.gpg >/dev/null
-sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_lgpl.list "https://smartarmstack.github.io/smart_arm_stack_ros2/smartarmstack_lgpl.list"
+curl -s --compressed "https://smartarmstack.github.io/smart_arm_stack_ROS2/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/smartarmstack_lgpl.gpg >/dev/null
+sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_lgpl.list "https://smartarmstack.github.io/smart_arm_stack_ROS2/smartarmstack_lgpl.list"
 sudo apt update
 ```
 
 ### Installation (do only once)
 
+```{important} 
+  At this stage, `ROS2` must be installed otherwise dependencies will not be found correctly.
+```
+
+This will install all `SAS` packages. 
+
 ```commandline
 sudo apt-get install ros-jazzy-sas-*
+```
+
+### Update
+
+The `SAS` packages will update together with your other `apt` packages.
+
+```commandline
+sudo apt-get update
 ```
 
 ## A quick note
