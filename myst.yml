@@ -24,7 +24,6 @@ project:
     content:
       id: CC-BY-NC-SA-4.0
   toc:
-    - file: README.md
     - file: tutorial.md
     - file: CHANGELOG.md
 

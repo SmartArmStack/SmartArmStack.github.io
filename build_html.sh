@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python -m pip install mystmd==1.3.28
+python -m pip install mystmd
 export BASE_URL="https://smartarmstack.github.io"
 myst build --html
 
