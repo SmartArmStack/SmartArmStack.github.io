@@ -2,32 +2,10 @@
 version: 1
 
 project:
-  id: 37ba80f6-88a9-432e-ae3c-053072eda4e0
   title: "SAS"
-  github: smartarmstack
-  authors:
-    - name: Murilo M. Marinho
-      email: murilo.marinho@manchester.ac.uk
-      url: https://mmmarinho.github.io
-      # The LinkedIn key is listed in the docs but gives a warning and does nothing
-      # linkedin: www.linkedin.com/in/murilo-marques-marinho-046178252
-      # The GitHub key has no warning but also doesn't do anything
-      # github: https://github.com/mmmarinho
-      note: Lecturer in Robotics
-      orcid: 0000-0003-2795-9484
-      affiliations:
-      - id: MMM
-        institution: The University of Manchester
-        department: EEE
-        ror: 027m9bs27
-  license:
-    content:
-      id: CC-BY-NC-SA-4.0
   toc:
-    - file: tutorial.md
-    - file: CHANGELOG.md
+    - file: README.md
 
 site:
   template: book-theme
   title: SAS Website
-
