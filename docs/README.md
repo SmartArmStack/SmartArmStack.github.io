@@ -20,6 +20,10 @@ If being read on GitHub, please note that this page is better seen at https://sm
 SAS and ROS2
 ```
 
+The SmartArmStack has been developed in support of the SmartArm robot described in http://doi.org/10.1002/rcs.2053. 
+It has then been used in dozens of publications and updated in http://doi.org/10.1109/MRA.2023.3336472. Please cite one
+of these references if you use `SAS` in your own work.
+
 The current version of `SAS` supports `ROS 2`. 
 
 ## About
