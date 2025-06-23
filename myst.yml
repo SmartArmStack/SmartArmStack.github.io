@@ -2,15 +2,8 @@
 version: 1
 
 project:
-  id: f420092a-e58c-429b-aca2-fb33c47059c7
-  jupyter: true # https://mystmd.org/guide/integrating-jupyter
-  title: "OXBR"
-  github: https://github.com/MarinhoLab/OpenExecutableBooksRobotics
-  math:
-    '\myvec': '\mathbf{\boldsymbol{ #1 }}'
-    '\mymatrix': '\mathbf{\boldsymbol{ #1 }}'
-    '\quat': '\mathbf{\boldsymbol{ #1 }}'
-    '\dual': '\varepsilon'
+  title: "SAS"
+  github: https://smartarmstack.github.io
   authors:
     - name: Murilo M. Marinho
       email: murilo.marinho@manchester.ac.uk
@@ -31,39 +24,13 @@ project:
       id: CC-BY-NC-SA-4.0
   toc:
     - file: README.md
-    - title: "[Basic] Robotics using numpy"
-      children:
-        - file: basic_lessons/README.md
-        - file: basic_lessons/lesson1_tutorial.ipynb
-        - file: basic_lessons/lesson2_tutorial.ipynb
-        - file: basic_lessons/lesson3_tutorial.ipynb
-        - file: basic_lessons/lesson4_tutorial.ipynb
-        - file: basic_lessons/lesson5_tutorial.ipynb
-    - title: "[Advanced] DQ Robotics"
-      children:
-        - file: dqrobotics/README.md
-        - file: dqrobotics/lesson1/lesson_dq1_python_basics.ipynb
-        - file: dqrobotics/lesson2/lesson_dq2_quaternion_basics.ipynb
-        - file: dqrobotics/lesson3/lesson_dq3_dual_quaternion_basics_part1.ipynb
-        - file: dqrobotics/lesson4/lesson_dq4_dual_quaternion_basics_part2.ipynb
-        - file: dqrobotics/lesson5/lesson_dq5_robot_control_basics_part1.ipynb
-        - file: dqrobotics/lesson6/lesson_dq6_robot_control_basics_part2.ipynb
-        - file: dqrobotics/lesson7/lesson_dq7_robot_control_basics_part3.ipynb
-        - file: dqrobotics/lesson8/lesson_dq8_optimization_based_robot_control.ipynb
-    - file: book.md
+    - file: tutorial.md
     - file: CHANGELOG.md
-    - file: TODO.md
-#USING DQROBOTICS DEVEL [START]
-    - title: "[Incomplete] Working chapters"
-      children:
-        - file: working/README.md
-        - file: working/adaptive_control.md
-#USING DQROBOTICS DEVEL [END]
 
 site:
   template: book-theme
-  title: OXBR Website
+  title: SAS Website
   options:
     logo: M3logo_black.png
     logo_dark: M3logo_white.svg
-    logo_text: "(Murilo's) OXBR"
+    logo_text: "Smart Arm Stack"
