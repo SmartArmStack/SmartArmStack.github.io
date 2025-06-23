@@ -40,7 +40,14 @@ Most of the library is licensed in LGPLv3. Some packages are licensed as Researc
 
 Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
 
-## Dependencies
+## Older versions
+
+Older (and unsupported) versions are available at:
+- https://github.com/SmartArmStack/smart_arm_stack
+- https://github.com/SmartArmStack/smart_arm_stack_lgpl
+- https://github.com/SmartArmStack/smart_arm_stack_researchonly
+
+## Acknowledgements
 
 ```{figure} img/computer_capi_open_tech.png
 :label: sas_dependencies
@@ -51,9 +58,3 @@ SAS Dependencies
 ```
 
 The main dependencies to note are [ros2](https://www.ros.org), [dqrobotics](https://dqrobotics.github.io), [eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page), and [pybind11](https://pybind11.readthedocs.io/en/stable/).
-
-## Older versions
-
-Older (and unsupported) versions are available at:
-- https://github.com/SmartArmStack/smart_arm_stack_lgpl
-- https://github.com/SmartArmStack/smart_arm_stack_researchonly
