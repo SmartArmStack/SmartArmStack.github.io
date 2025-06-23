@@ -80,9 +80,15 @@ Most of the library is licensed in LGPLv3. Some packages are licensed as Researc
 | `sas_robot_driver_kuka`  | LGPL    | A `sas_robot_driver` implementation for Kuka (Sunrise cabinet, FRI)                                                      |
 | `sas_robot_driver_ur`    | LGPL    | A `sas_robot_driver` implementation for UR                                                                               |
 
-## Installation instructions and Tutorials
+## Tutorials
 
 Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
+
+## Packaging
+
+### LGPL
+
+The PPA for the LGPL version is available at https://smartarmstack.github.io/smart_arm_stack_ROS2/. The archive is available at https://github.com/SmartArmStack/smart_arm_stack_ROS2/releases in case you need to rely on older versions.
 
 ## Older versions
 
@@ -102,3 +108,5 @@ SAS Dependencies
 ```
 
 The main dependencies to note are [ros2](https://www.ros.org), [dqrobotics](https://dqrobotics.github.io), [eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page), and [pybind11](https://pybind11.readthedocs.io/en/stable/).
+
+Packaging was made possible by intructive resources such as [Hosting your own PPA repository on GitHub](https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html).
