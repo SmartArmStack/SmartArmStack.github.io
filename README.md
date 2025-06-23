@@ -12,7 +12,7 @@ If being read on GitHub, please note that this page is better seen at https://sm
 
 ## Overview
 
-```{image} img/computer_ros2.svg
+```{image} img/computer_ros2.png?raw=true
 :width: 300px
 :align: left
 ```
@@ -39,7 +39,7 @@ Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
 
 ## Dependencies
 
-```{image} img/computer_capi_open_tech.svg
+```{image} img/computer_capi_open_tech.png?raw=true
 :width: 300px
 :align: left
 ```

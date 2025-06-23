@@ -8,4 +8,4 @@ as much as possible.
 ## History
 
 Previous versions of this library and website were made while I was a student or employed at the University of Tokyo. Very early
-versions of this were made while I was a student at the University of Brasilia.
+versions of this were made while I was a student at the University of Brasília.
