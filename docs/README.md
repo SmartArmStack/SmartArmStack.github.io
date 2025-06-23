@@ -1,8 +1,30 @@
 # SAS
 
-## Quickstart
+## A quick note
 
-### Set up PPA (do only once)
+If being read on GitHub, please note that this page is better seen at https://smartarmstack.github.io.
+
+## Installation
+
+### Dependencies
+
+#### ROS 2 Jazzy
+
+You can refer to the official documentation at https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
+
+#### DQ Robotics Development Version
+
+```{seealso}
+More information at http://doi.org/10.1109/MRA.2020.2997920.
+```
+
+```commandline
+sudo add-apt-repository ppa:dqrobotics-dev/development
+sudo apt-get update
+sudo apt-get install libdqrobotics libdqrobotics-interface-json11 libdqrobotics-interface-coppeliasim libdqrobotics-interface-coppeliasim-zmq
+```
+
+### Set up PPA
 
 This will add the `SAS` repository to your `apt` sources.
 
@@ -12,19 +34,19 @@ sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_lgpl.list "ht
 sudo apt update
 ```
 
-### Installation (do only once)
+### Installation
 
 ```{important} 
-  At this stage, `ROS2` must be installed otherwise dependencies will not be found correctly.
+  At this stage, `ROS2` must be installed otherwise dependencies might not be found correctly.
 ```
 
-This will install all `SAS` packages. 
+The command below will install all `SAS` packages. 
 
 ```commandline
 sudo apt-get install ros-jazzy-sas-*
 ```
 
-### Update
+## Update
 
 The `SAS` packages will update together with your other `apt` packages.
 
@@ -32,9 +54,7 @@ The `SAS` packages will update together with your other `apt` packages.
 sudo apt-get update
 ```
 
-## A quick note
 
-If being read on GitHub, please note that this page is better seen at https://smartarmstack.github.io.
 
 ## Overview
 
