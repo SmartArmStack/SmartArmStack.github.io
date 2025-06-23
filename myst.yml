@@ -1,11 +1,31 @@
-# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
-
 project:
+  id: c8d93191-431b-42e5-9679-6a16ea9c6f86
   title: "SAS"
+  github: https://github.com/MarinhoLab/SmartArmStack
+  authors:
+    - name: Murilo M. Marinho
+      email: murilo.marinho@manchester.ac.uk
+      url: https://mmmarinho.github.io
+      # The LinkedIn key is listed in the docs but gives a warning and does nothing
+      # linkedin: www.linkedin.com/in/murilo-marques-marinho-046178252
+      # The GitHub key has no warning but also doesn't do anything
+      # github: https://github.com/mmmarinho
+      note: Lecturer in Robotics
+      orcid: 0000-0003-2795-9484
+      affiliations:
+      - id: MMM
+        institution: The University of Manchester
+        department: EEE
+        ror: 027m9bs27
+  license:
+    content:
+      id: CC-BY-NC-SA-4.0
   toc:
     - file: README.md
+    - file: tutorial.md
+    - file: CHANGELOG.md
 
 site:
-  template: book-theme
+  template: article-theme
   title: SAS Website
