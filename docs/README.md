@@ -6,7 +6,11 @@ If being read on GitHub, please note that this page is better seen at https://sm
 
 ## Quickstart
 
-###
+### Docker
+
+```commandline
+docker run murilomarinho/sas_ros_jazzy:latest
+```
 
 ### Installation
 
