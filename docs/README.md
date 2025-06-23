@@ -36,6 +36,22 @@ The concept of `SAS` is to split away `ROS 2` code into `client` and `server` cl
 
 Most of the library is licensed in LGPLv3. Some packages are licensed as Research Only, with no commercial use allowed.
 
+## Package Summary
+
+*Research only* packages cannot be used for commercial use.
+
+| Package                  | License | Description                                                                                                              |
+|--------------------------|---------|--------------------------------------------------------------------------------------------------------------------------|
+| `sas_core`               | LGPL    | The part of the library that does not depend on `ROS2`.                                                                  |
+| `sas_common`             | LGPL    | Generic `ROS2` code used throughout the packages.                                                                        |
+| `sas_msgs`               | LGPL    | A wrapper for `ROS` messages that were made redundant in `ROS2`.                                                         |
+| `sas_conversions`        | LGPL    | Convert `ROS2` messages into `float`, `int`, or `dqrobotics` elements.                                                   |
+| `sas_robot_driver`       | LGPL    | `ROS2` nodes and libraries for creating servers and clients for robot configuration-space monitoring and control.        |
+| `sas_robot_kinematics`   | LGPL    | `ROS2` nodes and libraries for creating servers and clients for kinematic-level robot task-space monitoring and control. |
+| `sas_robot_driver_denso` | LGPL    | A `sas_robot_driver` implementation for DensoWave's bCap controlled robots                                               |
+| `sas_robot_driver_kuka`  | LGPL    | A `sas_robot_driver` implementation for Kuka (Sunrise cabinet, FRI)                                                      |
+| `sas_robot_driver_ur`    | LGPL    | A `sas_robot_driver` implementation for UR                                                                               |
+
 ## Installation instructions and Tutorials
 
 Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
