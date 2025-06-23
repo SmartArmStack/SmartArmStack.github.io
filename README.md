@@ -12,9 +12,12 @@ If being read on GitHub, please note that this page is better seen at https://sm
 
 ## Overview
 
-```{image} img/computer_ros2.png
+```{figure} img/computer_ros2.png
+:label: sas_and_ros2
 :width: 300px
 :align: left
+
+SAS and ROS2
 ```
 
 The SmartArmStack has been developed in support of the SmartArm robot described in http://doi.org/10.1002/rcs.2053. 
@@ -39,9 +42,12 @@ Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
 
 ## Dependencies
 
-```{image} img/computer_capi_open_tech.png
+```{figure} img/computer_capi_open_tech.png
+:label: sas_dependencies
 :width: 300px
 :align: left
+
+SAS Dependencies
 ```
 
 The main dependencies to note are [ros2](https://www.ros.org), [dqrobotics](https://dqrobotics.github.io), [eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page), and [pybind11](https://pybind11.readthedocs.io/en/stable/).
