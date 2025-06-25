@@ -8,8 +8,10 @@ If being read on GitHub, please note that this page is better seen at https://sm
 
 ### Docker
 
+You can explore a readily-made image as follows
+
 ```commandline
-docker run murilomarinho/sas_ros_jazzy:latest
+docker run -it murilomarinho/sas_ros_jazzy:latest
 ```
 
 ### Installation
