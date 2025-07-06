@@ -24,7 +24,11 @@ project:
   toc:
     - file: README.md
     - file: installation.md
-    - file: tutorial.md
+    - title: "Modules"
+      children:
+        - file: submodules/docker-coppeliasim/README.md
+        - file: submodules/sas_ur_control_template/README.md
+        - file: submodules/sas_kuka_control_template/README.md
     - file: CHANGELOG.md
 
 site:
