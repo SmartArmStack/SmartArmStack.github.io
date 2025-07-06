@@ -26,9 +26,9 @@ project:
     - file: installation.md
     - title: "Modules"
       children:
-        - file: submodules/docker-coppeliasim/README.md
-        - file: submodules/sas_ur_control_template/README.md
-        - file: submodules/sas_kuka_control_template/README.md
+        - file: submodules/docker-coppeliasim/docker-coppeliasim_README.md
+        - file: submodules/sas_ur_control_template/sas_ur_control_template_README.md
+        - file: submodules/sas_kuka_control_template/sas_kuka_control_template_README.md
     - file: CHANGELOG.md
 
 site:
