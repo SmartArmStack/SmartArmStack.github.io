@@ -1,12 +1,12 @@
 # SAS
 
-## A quick note
-
-If being read on GitHub, please note that this page is better seen at https://smartarmstack.github.io.
+> [!NOTE]
+> If being read on GitHub, please note that this page is better seen at https://smartarmstack.github.io.
 
 ## Quickstart
 
-### Docker
+### Docker 
+![Docker Pulls](https://img.shields.io/docker/pulls/murilomarinho/sas)
 
 You can explore a readily-made image as follows
 
@@ -14,7 +14,9 @@ You can explore a readily-made image as follows
 docker run -it murilomarinho/sas:latest
 ```
 
-### Installation
+### Installation 
+[![SAS Debian Builder](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml/badge.svg?branch=jazzy)](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml)
+
 
 ```{important}
 See pre-requisites at [](installation.md).
