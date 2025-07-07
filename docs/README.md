@@ -6,9 +6,7 @@
 ## Quickstart
 
 ### Docker 
-![Docker Pulls](https://img.shields.io/docker/pulls/murilomarinho/sas)
-
-You can explore a readily-made image as follows
+[![Docker Pulls](https://img.shields.io/docker/pulls/murilomarinho/sas)](https://hub.docker.com/r/murilomarinho/sas)
 
 ```commandline
 docker run -it murilomarinho/sas:latest
@@ -17,10 +15,9 @@ docker run -it murilomarinho/sas:latest
 ### Installation 
 [![SAS Debian Builder](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml/badge.svg?branch=jazzy)](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml)
 
+> [!IMPORTANT]
+> See installation pre-requisites at https://smartarmstack.github.io/installation.
 
-```{important}
-See pre-requisites at [](installation.md).
-```
  
 The command below will add and install the `sas` packages via `apt-get`.
 
@@ -34,13 +31,12 @@ sudo apt update
 sudo apt-get install ros-jazzy-sas-*
 ```
 
-### Update
+> [!NOTE]
+> After installing the packages with the command above, you can update them with
+> ```bash
+> sudo apt-get update && sudo apt-get upgrade ros-jazzy-sas-*
+> ```
 
-After installing, you'll be able to update normally with `apt-get`.
-
-```commandline
-sudo apt-get update
-```
 
 ## Overview
 
