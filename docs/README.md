@@ -16,7 +16,7 @@ docker run -it murilomarinho/sas:latest
 [![SAS Debian Builder](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml/badge.svg?branch=jazzy)](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml)
 
 > [!IMPORTANT]
-> See installation pre-requisites at https://smartarmstack.github.io/installation.
+> See installation pre-requisites at https://smartarmstack.github.io/pre-requisites.
 
  
 The command below will add and install the `sas` packages via `apt-get`.
