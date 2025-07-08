@@ -15,8 +15,41 @@ docker run -it murilomarinho/sas:latest
 ### Installation 
 [![SAS Debian Builder](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml/badge.svg?branch=jazzy)](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml)
 
-> [!IMPORTANT]
-> See installation pre-requisites at https://smartarmstack.github.io/pre-requisites.
+```{tip}
+:class: dropdown
+#### Click here for the pre-requisites
+
+#### ROS 2 Jazzy
+
+- You can refer to the official documentation at https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
+- A softer explanation is available in https://ros2-tutorial.readthedocs.io/en/latest/installation.html.
+
+#### DQ Robotics Development Version
+
+##### C++
+
+:::{important}
+The `development` version is needed.
+:::
+
+:::commandline
+sudo add-apt-repository ppa:dqrobotics-dev/development
+sudo apt-get update
+sudo apt-get install libdqrobotics libdqrobotics-interface-json11 libdqrobotics-interface-coppeliasim libdqrobotics-interface-coppeliasim-zmq
+:::
+
+##### Python
+
+:::{important}
+Because ROS2 does not currently support `venv`, it is recommended
+to install this system-wide.
+:::
+
+:::commandline
+python3 -m pip install dqrobotics --pre --break-system-packages
+:::
+
+```
 
  
 The command below will add and install the `sas` packages via `apt-get`.
@@ -48,17 +81,32 @@ sudo apt-get install ros-jazzy-sas-*
 SAS and ROS2
 ```
 
+::::{grid} 1 1 2 3
+
+:::{card}
+:header: Focus on your application🔍
+`SAS` is a C++ framework with Python bindings to enable fast prototyping on ROS 2. 
+:::
+
+:::{card}
+:header: `ROS2` where it shines✨
+Split away `ROS 2` code into `client` and `server` classes, communicate via `ROS 2` 
+without `ROS 2` code.
+:::
+
+:::{card}
+:header: Multiple robots🤖
+Enjoy drivers for `DensoWave`, `UR`, and `KUKA`. With ongoing developments for `Franka Emika`
+and `Unitree` robots.
+:::
+::::
+
+
+
+
 The SmartArmStack has been developed in support of the SmartArm robot described in http://doi.org/10.1002/rcs.2053. 
 It has then been used in dozens of publications and updated in http://doi.org/10.1109/MRA.2023.3336472. Please cite one
 of these references if you use `SAS` in your own work.
-
-The current version of `SAS` supports `ROS 2`. 
-
-## About
-
-`SAS` is a C++ framework with Python bindings to enable fast prototyping on ROS 2. Focus on your application. 
-The concept of `SAS` is to split away `ROS 2` code into `client` and `server` classes, allowing your code to use
-`ROS 2` interfaces without any need to create `publishers` or `subscribers` manually.
 
 ## License
 
@@ -66,7 +114,7 @@ Most of the library is licensed in LGPLv3. Some packages are licensed as Researc
 
 ## Package Summary
 
-*Research only* packages cannot be used for commercial use.
+### LGPL
 
 | Package                  | License | Description                                                                                                              |
 |--------------------------|---------|--------------------------------------------------------------------------------------------------------------------------|
@@ -88,7 +136,9 @@ Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
 
 ### LGPL
 
-The PPA for the LGPL version is available at https://smartarmstack.github.io/smart_arm_stack_ROS2/. The archive is available at https://github.com/SmartArmStack/smart_arm_stack_ROS2/releases in case you need to rely on older versions.
+The PPA for the LGPL version is available at https://smartarmstack.github.io/smart_arm_stack_ROS2/. 
+
+The archive is available at https://github.com/SmartArmStack/smart_arm_stack_ROS2/releases in case you need to rely on older versions.
 
 ## Older versions
 

@@ -23,7 +23,6 @@ project:
       id: CC-BY-NC-SA-4.0
   toc:
     - file: README.md
-    - file: pre_requisites.md
     - title: "Modules"
       children:
         - file: submodules/sas_ur_control_template/sas_ur_control_template_README.md
