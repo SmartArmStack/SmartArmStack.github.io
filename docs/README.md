@@ -1,7 +1,34 @@
 # SAS
 
-> [!NOTE]
-> If being read on GitHub, please note that this page is better seen at https://smartarmstack.github.io.
+The SmartArmStack (`sas`) has been developed (with this name) in support of the [SmartArm robot](https://www.youtube.com/watch?v=dayuW47PKKc&list=PLwlAbCcz-l4th0eD8DCTSjyUo3rKeTY16&index=12) described in http://doi.org/10.1002/rcs.2053,
+at the University of Tokyo. 
+It has then been used in dozens of projects and updated in http://doi.org/10.1109/MRA.2023.3336472 for the [AI Science Platform](https://www.youtube.com/watch?v=3JPSywPAdj4). Please cite one
+of these references if you use `sas` in your own work.
+
+::::{grid} 1 1 2 3
+
+:::{card}
+:header: Focus on your application🔍
+`sas` is a C++ framework with Python bindings to enable fast prototyping using `ROS 2`
+toolchain. 
+:::
+
+:::{card}
+:header: `ROS 2` where it shines✨
+Split away `ROS 2` code into `client` and `server` classes, communicate via `ROS 2` 
+without `ROS 2` code.
+:::
+
+:::{card}
+:header: Multiple robots🤖
+Enjoy drivers for `DensoWave`, `UR`, and `KUKA`. With ongoing developments for `Franka Emika`
+and `Unitree` robots.
+:::
+::::
+
+Please note that `sas` is originally based on developments [circa 2013](https://github.com/rosilo) by Murilo M. Marinho.
+Affiliation with the University of Tokyo has ceased on December 2023 and this project is currently affiliated with
+the University of Manchester.
 
 ## Quickstart
 
@@ -41,7 +68,7 @@ sudo apt-get install libdqrobotics libdqrobotics-interface-json11 libdqrobotics-
 ##### Python
 
 :::{important}
-Because ROS2 does not currently support `venv`, it is recommended
+Because `ROS 2` does not currently support `venv`, it is recommended
 to install this system-wide.
 :::
 
@@ -50,8 +77,6 @@ python3 -m pip install dqrobotics --pre --break-system-packages
 :::
 
 ```
-
- 
 The command below will add and install the `sas` packages via `apt-get`.
 
 ```bash
@@ -64,14 +89,16 @@ sudo apt update
 sudo apt-get install ros-jazzy-sas-*
 ```
 
-> [!NOTE]
-> After installing the packages with the command above, you can update them with
-> ```bash
-> sudo apt-get update && sudo apt-get upgrade ros-jazzy-sas-*
-> ```
+```{note}
+:class: dropdown
+# Click here for update instructions.
+After installing the packages with the command above, you can update them with
+:::bash
+sudo apt-get update && sudo apt-get upgrade ros-jazzy-sas-*
+:::
+```
 
-
-## Overview
+## License
 
 ```{figure} img/computer_ros2.png
 :label: sas_and_ros2
@@ -81,40 +108,11 @@ sudo apt-get install ros-jazzy-sas-*
 SAS and ROS2
 ```
 
-::::{grid} 1 1 2 3
+`sas` has worked in a dual-licensing scheme, described in the dropdown boxes below.
 
-:::{card}
-:header: Focus on your application🔍
-`SAS` is a C++ framework with Python bindings to enable fast prototyping on ROS 2. 
-:::
-
-:::{card}
-:header: `ROS2` where it shines✨
-Split away `ROS 2` code into `client` and `server` classes, communicate via `ROS 2` 
-without `ROS 2` code.
-:::
-
-:::{card}
-:header: Multiple robots🤖
-Enjoy drivers for `DensoWave`, `UR`, and `KUKA`. With ongoing developments for `Franka Emika`
-and `Unitree` robots.
-:::
-::::
-
-
-
-
-The SmartArmStack has been developed in support of the SmartArm robot described in http://doi.org/10.1002/rcs.2053. 
-It has then been used in dozens of publications and updated in http://doi.org/10.1109/MRA.2023.3336472. Please cite one
-of these references if you use `SAS` in your own work.
-
-## License
-
-Most of the library is licensed in LGPLv3. Some packages are licensed as Research Only, with no commercial use allowed.
-
-## Package Summary
-
-### LGPL
+```{important}
+:class: dropdown
+### Click here for the LGPL packages information
 
 | Package                  | License | Description                                                                                                              |
 |--------------------------|---------|--------------------------------------------------------------------------------------------------------------------------|
@@ -127,6 +125,14 @@ Most of the library is licensed in LGPLv3. Some packages are licensed as Researc
 | `sas_robot_driver_denso` | LGPL    | A `sas_robot_driver` implementation for DensoWave's bCap controlled robots                                               |
 | `sas_robot_driver_kuka`  | LGPL    | A `sas_robot_driver` implementation for Kuka (Sunrise cabinet, FRI)                                                      |
 | `sas_robot_driver_ur`    | LGPL    | A `sas_robot_driver` implementation for UR                                                                               |
+```
+
+```{tip}
+:class: dropdown
+### Click here for the Noncommercial packages information
+
+Currently being ported and packaged to `ROS 2` jazzy.
+```
 
 ## Tutorials
 
