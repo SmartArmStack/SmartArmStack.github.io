@@ -36,7 +36,7 @@ the University of Manchester.
 [![Docker Pulls](https://img.shields.io/docker/pulls/murilomarinho/sas)](https://hub.docker.com/r/murilomarinho/sas)
 
 ```commandline
-docker run -it murilomarinho/sas:latest
+docker run -it murilomarinho/sas:jazzy
 ```
 
 ### Installation 
