@@ -169,8 +169,6 @@ The PPA for the CC-BY-NC version is available at https://marinholab.github.io/sa
 - https://github.com/SmartArmStack/smart_arm_stack
 - https://github.com/SmartArmStack/smart_arm_stack_lgpl
 - https://github.com/SmartArmStack/smart_arm_stack_researchonly
-
-:::
 ```
 
 ## Acknowledgements
