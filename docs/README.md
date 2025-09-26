@@ -94,7 +94,7 @@ The command below will add and install the `sas` CC BY-NC 4.0 packages via `apt-
 ```bash
 curl -s --compressed "https://marinholab.github.io/sas_debian_builder_noncommercial/KEY.gpg" \
 | gpg --dearmor \
-| sudo tee /etc/apt/trusted.gpg.d/smartarmstack_lgpl.gpg >/dev/null
+| sudo tee /etc/apt/trusted.gpg.d/smartarmstack_cc_by_nc.gpg >/dev/null
 sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_cc_by_nc.list \
 "https://marinholab.github.io/sas_debian_builder_noncommercial/smartarmstack_cc_by_nc.list"
 sudo apt update
