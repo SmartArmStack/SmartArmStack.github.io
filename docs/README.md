@@ -89,7 +89,7 @@ sudo apt update
 sudo apt-get install ros-jazzy-sas-*
 ```
 
-The command below will add and install the `sas` CC-BY-NC packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
+The command below will add and install the `sas` CC BY-NC 4.0 packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
 
 ```bash
 curl -s --compressed "https://marinholab.github.io/sas_debian_builder_noncommercial/KEY.gpg" \
@@ -142,16 +142,16 @@ SAS and ROS2
 
 ```{tip}
 :class: dropdown
-### Click here for the Noncommercial packages information
+### Click here for the CC BY-NC 4.0 packages information
 
 Copyright (C) 2025 Murilo M. Marinho. Licensed under CC BY-NC 4.0 for noncommercial use.
 Commercial licensing available by contacting contact@uominnovationfactory.com.
 
-| Package                                     | License  | Description                                                                           |
-|---------------------------------------------|----------|---------------------------------------------------------------------------------------|
-| `sas_operator_side_receiver`                | CC-BY-NC | Receive messages from master devices and expose them as topics in `ROS2`.             |
-| `sas_patient_side_manager`                  | CC-BY-NC | Manage master devices controlling `sas_robot_kinematics` and clutch state space.      |
-| `sas_robot_kinematics_constrained_multiarm` | CC-BY-NC | A centralised solver for multiple robots with configurable vector-field inequalities. |
+| Package                                     | License      | Description                                                                           |
+|---------------------------------------------|--------------|---------------------------------------------------------------------------------------|
+| `sas_operator_side_receiver`                | CC BY-NC 4.0 | Receive messages from master devices and expose them as topics in `ROS2`.             |
+| `sas_patient_side_manager`                  | CC BY-NC 4.0 | Manage master devices controlling `sas_robot_kinematics` and clutch state space.      |
+| `sas_robot_kinematics_constrained_multiarm` | CC BY-NC 4.0 | A centralised solver for multiple robots with configurable vector-field inequalities. |
 ```
 
 ## Tutorials
