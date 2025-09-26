@@ -96,7 +96,7 @@ TODO: Fixing PPA URL
 
 ```{note}
 :class: dropdown
-# Click here for update instructions.
+# Click here for update instructions
 After installing the packages with the command above, you can update them with
 :::bash
 sudo apt-get update && sudo apt-get upgrade ros-jazzy-sas-*
