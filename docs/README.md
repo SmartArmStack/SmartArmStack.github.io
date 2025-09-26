@@ -164,12 +164,16 @@ The PPA for the LGPL version is available at https://smartarmstack.github.io/sma
 
 The PPA for the CC-BY-NC version is available at https://marinholab.github.io/sas_debian_builder_noncommercial/. The archive is currently private. 
 
-## Older versions
+```{note}
+:class: dropdown
+# Older (and unsupported) versions
 
-Older (and unsupported) versions are available at:
 - https://github.com/SmartArmStack/smart_arm_stack
 - https://github.com/SmartArmStack/smart_arm_stack_lgpl
 - https://github.com/SmartArmStack/smart_arm_stack_researchonly
+
+:::
+```
 
 ## Acknowledgements
 
