@@ -77,7 +77,7 @@ python3 -m pip install dqrobotics --pre --break-system-packages
 :::
 
 ```
-The command below will add and install the `sas` packages via `apt-get`.
+The command below will add and install the `sas` LGPL packages via `apt-get`.
 
 ```bash
 curl -s --compressed "https://smartarmstack.github.io/smart_arm_stack_ROS2/KEY.gpg" \
@@ -88,6 +88,19 @@ sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_lgpl.list \
 sudo apt update
 sudo apt-get install ros-jazzy-sas-*
 ```
+
+The command below will add and install the `sas` CC-BY-NC packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
+
+```bash
+curl -s --compressed "https://marinholab.github.io/sas_debian_builder_noncommercial/KEY.gpg" \
+| gpg --dearmor \
+| sudo tee /etc/apt/trusted.gpg.d/smartarmstack_lgpl.gpg >/dev/null
+sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_cc_by_nc.list \
+"https://marinholab.github.io/sas_debian_builder_noncommercial/smartarmstack_cc_by_nc.list"
+sudo apt update
+sudo apt-get install ros-jazzy-sas-*
+```
+
 
 ```{note}
 :class: dropdown
@@ -131,7 +144,14 @@ SAS and ROS2
 :class: dropdown
 ### Click here for the Noncommercial packages information
 
-Currently being ported and packaged to `ROS 2` jazzy.
+Copyright (C) 2025 Murilo M. Marinho. Licensed under CC BY-NC 4.0 for noncommercial use.
+Commercial licensing available by contacting contact@uominnovationfactory.com.
+
+| Package                                     | License  | Description                                                                           |
+|---------------------------------------------|----------|---------------------------------------------------------------------------------------|
+| `sas_operator_side_receiver`                | CC-BY-NC | Receive messages from master devices and expose them as topics in `ROS2`.             |
+| `sas_patient_side_manager`                  | CC-BY-NC | Manage master devices controlling `sas_robot_kinematics` and clutch state space.      |
+| `sas_robot_kinematics_constrained_multiarm` | CC-BY-NC | A centralised solver for multiple robots with configurable vector-field inequalities. |
 ```
 
 ## Tutorials
@@ -145,6 +165,12 @@ Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
 The PPA for the LGPL version is available at https://smartarmstack.github.io/smart_arm_stack_ROS2/. 
 
 The archive is available at https://github.com/SmartArmStack/smart_arm_stack_ROS2/releases in case you need to rely on older versions.
+
+### CC-BY-NC
+
+The PPA for the CC-BY-NC version is available at https://marinholab.github.io/sas_debian_builder_noncommercial/
+
+The archive is currently private. 
 
 ## Older versions
 
