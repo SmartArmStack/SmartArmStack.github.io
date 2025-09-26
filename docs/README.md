@@ -92,7 +92,7 @@ sudo apt-get install ros-jazzy-sas-*
 The command below will add and install the `sas` CC BY-NC 4.0 packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
 
 ```bash
-TODO
+TODO: Fixing PPA URL
 ```
 
 
@@ -120,6 +120,8 @@ SAS and ROS2
 ```{important}
 :class: dropdown
 ### Click here for the LGPL packages information
+
+Copyright (C) 2025 Murilo M. Marinho.
 
 | Package                  | License | Description                                                                                                              |
 |--------------------------|---------|--------------------------------------------------------------------------------------------------------------------------|
@@ -156,15 +158,11 @@ Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
 
 ### LGPL
 
-The PPA for the LGPL version is available at https://smartarmstack.github.io/smart_arm_stack_ROS2/. 
-
-The archive is available at https://github.com/SmartArmStack/smart_arm_stack_ROS2/releases in case you need to rely on older versions.
+The PPA for the LGPL version is available at https://smartarmstack.github.io/smart_arm_stack_ROS2/. The archive is available at https://github.com/SmartArmStack/smart_arm_stack_ROS2/releases in case you need to rely on older versions.
 
 ### CC-BY-NC
 
-The PPA for the CC-BY-NC version is available at https://marinholab.github.io/sas_debian_builder_noncommercial/
-
-The archive is currently private. 
+The PPA for the CC-BY-NC version is available at https://marinholab.github.io/sas_debian_builder_noncommercial/. The archive is currently private. 
 
 ## Older versions
 
