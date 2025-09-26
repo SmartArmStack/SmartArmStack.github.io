@@ -9,21 +9,19 @@ of these references if you use `sas` in your own work.
 
 :::{card}
 :header: Focus on your application🔍
-`sas` is a C++ framework with Python bindings to enable fast prototyping using `ROS 2`
-toolchain. 
+`sas` is a C++ framework with Python bindings to enable fast prototyping using `ROS 2` toolchain. 
 :::
 
 :::{card}
 :header: `ROS 2` where it shines✨
-Split away `ROS 2` code into `client` and `server` classes, communicate via `ROS 2` 
-without `ROS 2` code.
+Split away `ROS 2` code into `client` and `server` classes, communicate via `ROS 2` without `ROS 2` code.
 :::
 
 :::{card}
 :header: Multiple robots🤖
-Enjoy drivers for `DensoWave`, `UR`, and `KUKA`. With ongoing developments for `Franka Emika`
-and `Unitree` robots.
+Enjoy drivers for `DensoWave`, `UR`, and `KUKA`. With ongoing developments for `Franka Emika` and `Unitree` robots.
 :::
+
 ::::
 
 Please note that `sas` is originally based on developments [circa 2013](https://github.com/rosilo) by Murilo M. Marinho.
@@ -187,4 +185,4 @@ SAS Dependencies
 
 The main dependencies to note are [ros2](https://www.ros.org), [dqrobotics](https://dqrobotics.github.io), [eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page), and [pybind11](https://pybind11.readthedocs.io/en/stable/).
 
-Packaging was made possible by intructive resources such as [Hosting your own PPA repository on GitHub](https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html).
+Packaging was made possible by instructive resources such as [Hosting your own PPA repository on GitHub](https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html).
