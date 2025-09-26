@@ -89,6 +89,10 @@ sudo apt-get install ros-jazzy-sas-*
 
 The command below will add and install the `sas` CC BY-NC 4.0 packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
 
+:::{important}
+These CC BY-NC 4.0 packages are currently only available in `amd64` owing to GitHub limitations in private repositories.
+:::
+
 ```bash
 curl -s --compressed "https://marinholab.github.io/sas_debian_builder_noncommercial/KEY.gpg" \
 | gpg --dearmor \
