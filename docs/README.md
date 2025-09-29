@@ -28,19 +28,19 @@ Please note that `sas` is originally based on developments [circa 2013](https://
 Affiliation with the University of Tokyo has ceased on December 2023 and this project is currently affiliated with
 the University of Manchester.
 
-## Quickstart
-
-### Docker 
+## Docker 
 [![Docker Pulls](https://img.shields.io/docker/pulls/murilomarinho/sas)](https://hub.docker.com/r/murilomarinho/sas)
 
 ```commandline
 docker run -it murilomarinho/sas:jazzy
 ```
 
-### Installation 
+## Installation 
 [![SAS Debian Builder](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml/badge.svg?branch=jazzy)](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml)
 
-```{tip}
+### Pre-requisites
+
+```{note}
 :class: dropdown
 #### Click here for the pre-requisites
 
@@ -75,6 +75,13 @@ python3 -m pip install dqrobotics --pre --break-system-packages
 :::
 
 ```
+
+### LGPL Packages
+
+:::{tip}
+The LGPL packages are available in `amd64` and `arm64`.
+:::
+
 The command below will add and install the `sas` LGPL packages via `apt-get`.
 
 ```bash
@@ -87,44 +94,7 @@ sudo apt update
 sudo apt-get install ros-jazzy-sas-*
 ```
 
-The command below will add and install the `sas` CC BY-NC 4.0 packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
-
-:::{important}
-These CC BY-NC 4.0 packages are currently only available in `amd64` owing to GitHub limitations in private repositories.
-:::
-
-```bash
-curl -s --compressed "https://marinholab.github.io/sas_debian_builder_noncommercial/KEY.gpg" \
-| gpg --dearmor \
-| sudo tee /etc/apt/trusted.gpg.d/smartarmstack_cc_by_nc.gpg >/dev/null
-sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_cc_by_nc.list \
-"https://marinholab.github.io/sas_debian_builder_noncommercial/smartarmstack_cc_by_nc.list"
-sudo apt update
-sudo apt-get install ros-jazzy-sas-*
-```
-
 ```{note}
-:class: dropdown
-# Click here for update instructions
-After installing the packages with the command above, you can update them with
-:::bash
-sudo apt-get update && sudo apt-get upgrade ros-jazzy-sas-*
-:::
-```
-
-## License
-
-```{figure} img/computer_ros2.png
-:label: sas_and_ros2
-:width: 300px
-:align: left
-
-SAS and ROS2
-```
-
-`sas` has worked in a dual-licensing scheme, described in the dropdown boxes below.
-
-```{important}
 :class: dropdown
 ### Click here for the LGPL packages information
 
@@ -143,7 +113,25 @@ Copyright (C) 2025 Murilo M. Marinho.
 | `sas_robot_driver_ur`    | LGPL    | A `sas_robot_driver` implementation for UR                                                                               |
 ```
 
-```{tip}
+### CC BY-NC 4.0 Packages
+
+:::{tip}
+The CC BY-NC 4.0 packages are currently only available in `amd64` owing to GitHub limitations in private repositories.
+:::
+
+The command below will add and install the `sas` CC BY-NC 4.0 packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
+
+```bash
+curl -s --compressed "https://marinholab.github.io/sas_debian_builder_noncommercial/KEY.gpg" \
+| gpg --dearmor \
+| sudo tee /etc/apt/trusted.gpg.d/smartarmstack_cc_by_nc.gpg >/dev/null
+sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_cc_by_nc.list \
+"https://marinholab.github.io/sas_debian_builder_noncommercial/smartarmstack_cc_by_nc.list"
+sudo apt update
+sudo apt-get install ros-jazzy-sas-*
+```
+
+```{note}
 :class: dropdown
 ### Click here for the CC BY-NC 4.0 packages information
 
@@ -156,6 +144,26 @@ Commercial licensing available by contacting contact@uominnovationfactory.com.
 | `sas_patient_side_manager`                  | CC BY-NC 4.0 | Manage master devices controlling `sas_robot_kinematics` and clutch state space.      |
 | `sas_robot_kinematics_constrained_multiarm` | CC BY-NC 4.0 | A centralised solver for multiple robots with configurable vector-field inequalities. |
 ```
+
+### Updates
+
+After installing the packages with the command above, you can update them with
+
+:::bash
+sudo apt-get update && sudo apt-get upgrade ros-jazzy-sas-*
+:::
+
+## License
+
+```{figure} img/computer_ros2.png
+:label: sas_and_ros2
+:width: 300px
+:align: left
+
+SAS and ROS2
+```
+
+`sas` has worked in a dual-licensing scheme, described in the dropdown boxes below.
 
 ## Tutorials
 
