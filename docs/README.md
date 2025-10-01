@@ -198,6 +198,6 @@ The PPA for the CC BY-NC 4.0 version is available at https://marinholab.github.i
 SAS Dependencies
 ```
 
-The main dependencies to note are [ros2](https://www.ros.org), [dqrobotics](https://dqrobotics.github.io), [eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page), and [pybind11](https://pybind11.readthedocs.io/en/stable/).
+The main dependencies to note are [ROS2](https://www.ros.org) described https://doi.org/10.1126/scirobotics.abm6074, [DQ Robotics](https://dqrobotics.github.io) described in http://doi.org/10.1109/MRA.2020.2997920, [eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page), and [pybind11](https://pybind11.readthedocs.io/en/stable/).
 
 Packaging was made possible by instructive resources such as [Hosting your own PPA repository on GitHub](https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html).
