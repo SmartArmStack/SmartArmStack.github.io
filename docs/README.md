@@ -35,7 +35,7 @@ the University of Manchester.
 docker run -it murilomarinho/sas:jazzy
 ```
 
-## Installation 
+## Ubuntu Installation 
 [![SAS Debian Builder](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml/badge.svg?branch=jazzy)](https://github.com/SmartArmStack/smart_arm_stack_ROS2/actions/workflows/sas_debian_builder.yml)
 
 ### Pre-requisites
