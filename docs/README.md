@@ -169,25 +169,6 @@ SAS and ROS2
 
 Please refer to https://ros2-tutorial.readthedocs.io/en/latest/sas/index.html.
 
-## Packaging
-
-### LGPL
-
-The PPA for the LGPL version is available at https://smartarmstack.github.io/smart_arm_stack_ROS2/. The archive is available at https://github.com/SmartArmStack/smart_arm_stack_ROS2/releases in case you need to rely on older versions.
-
-### CC BY-NC 4.0
-
-The PPA for the CC BY-NC 4.0 version is available at https://marinholab.github.io/sas_debian_builder_noncommercial/. The archive is currently private. 
-
-```{note}
-:class: dropdown
-# Older (and unsupported) versions
-
-- https://github.com/SmartArmStack/smart_arm_stack
-- https://github.com/SmartArmStack/smart_arm_stack_lgpl
-- https://github.com/SmartArmStack/smart_arm_stack_researchonly
-```
-
 ## Acknowledgements
 
 ```{figure} img/computer_capi_open_tech.png
