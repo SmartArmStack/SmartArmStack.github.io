@@ -14,10 +14,10 @@ git clone "$1" -b "$2" --single-branch --depth=1
 cd "$FOLDER_NAME"
 
 FILE_NAME="${FOLDER_NAME}"_README.md
-mv README.md FILE_NAME
+mv README.md "$FILE_NAME"
 # Add author info if needed
 if [[ $3 ]]; then
-  sed -i "$(printf "---\n author: ${3}\n ---")" FILE_NAME
+  sed -i "$(printf "---\n author: ${3}\n ---")" "$FILE_NAME"
 fi
 
 cd ..
