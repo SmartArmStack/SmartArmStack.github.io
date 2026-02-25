@@ -5,12 +5,20 @@ set -e
 clone_and_rename_readme(){
 # $1 must be the repository name
 # $2 must be the branch
+# $3 must be the author or empty
 
 FOLDER_NAME=$(basename "$1" .git)
 
 git clone "$1" -b "$2" --single-branch --depth=1
 cd "$FOLDER_NAME"
-mv README.md "${FOLDER_NAME}"_README.md
+
+FILE_NAME="${FOLDER_NAME}"_README.md
+mv README.md FILE_NAME
+# Add author info if needed
+if [[ $3 ]]
+  sed -i $(printf "---\n author: ${3}\n ---") FILE_NAME
+fi
+
 cd ..
 }
 
@@ -22,6 +30,10 @@ cd submodules
 clone_and_rename_readme https://github.com/SmartArmStack/docker-coppeliasim.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_ur_control_template.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_kuka_control_template.git main
+
+# Content from other authors
+# JJQO
+clone_and_rename_readme https://github.com/Adorno-Lab/sas_unitree_b1z1_control_template main "Juan Jose Quiroz Omana"
 
 cd .. # Get out of submodules
 cd scripts # Go back to `scripts`
