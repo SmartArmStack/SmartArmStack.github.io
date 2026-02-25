@@ -28,6 +28,7 @@ project:
         - file: submodules/sas_ur_control_template/sas_ur_control_template_README.md
         - file: submodules/sas_kuka_control_template/sas_kuka_control_template_README.md
         - file: submodules/docker-coppeliasim/docker-coppeliasim_README.md
+        - file: submodules/sas_unitree_b1z1_control_template/sas_unitree_b1z1_control_template_README.md
     - file: CHANGELOG.md
 
 site:
