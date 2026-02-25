@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # This script should be run in its own folder.
+sudo apt-get install tree
 
 clone_and_rename_readme(){
 # $1 must be the repository name
@@ -34,6 +35,9 @@ clone_and_rename_readme https://github.com/MarinhoLab/sas_kuka_control_template.
 # Content from other authors
 # JJQO
 clone_and_rename_readme https://github.com/Adorno-Lab/sas_unitree_b1z1_control_template main "Juan Jose Quiroz Omana"
+
+# Print all contents.
+tree .
 
 cd .. # Get out of submodules
 cd scripts # Go back to `scripts`
