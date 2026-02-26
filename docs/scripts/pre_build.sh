@@ -32,9 +32,9 @@ clone_and_rename_readme https://github.com/SmartArmStack/docker-coppeliasim.git 
 clone_and_rename_readme https://github.com/MarinhoLab/sas_ur_control_template.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_kuka_control_template.git main
 
-# Content from other authors
+# Content from other authors (Not working yet, but one can dream)
 # JJQO
-clone_and_rename_readme https://github.com/Adorno-Lab/sas_unitree_b1z1_control_template main "Juan Jose Quiroz Omana"
+# clone_and_rename_readme https://github.com/Adorno-Lab/sas_unitree_b1z1_control_template main "Juan Jose Quiroz Omana"
 
 # Print all contents.
 tree .
