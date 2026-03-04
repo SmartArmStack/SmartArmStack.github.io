@@ -23,13 +23,14 @@ project:
       id: CC-BY-NC-SA-4.0
   toc:
     - file: README.md
-    - title: "Modules"
+    - title: "Templates"
       children:
         - file: submodules/sas_ur_control_template/sas_ur_control_template_README.md
         - file: submodules/sas_kuka_control_template/sas_kuka_control_template_README.md
-        - file: submodules/sas_robot_driver_coppeliasim/sas_robot_driver_coppeliasim_README.md
         - file: submodules/docker-coppeliasim/docker-coppeliasim_README.md
-        #- file: submodules/sas_unitree_b1z1_control_template/sas_unitree_b1z1_control_template_README.md
+    - title: "Modules"
+      children:
+        - file: submodules/sas_robot_driver_coppeliasim/sas_robot_driver_coppeliasim_README.md
     - file: CHANGELOG.md
 
 site:
