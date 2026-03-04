@@ -1,16 +1,25 @@
 #!/bin/bash
 set -e
 # This script should be run in its own folder.
+sudo apt-get install tree
 
 clone_and_rename_readme(){
 # $1 must be the repository name
 # $2 must be the branch
+# $3 must be the author or empty
 
 FOLDER_NAME=$(basename "$1" .git)
 
 git clone "$1" -b "$2" --single-branch --depth=1
 cd "$FOLDER_NAME"
-mv README.md "${FOLDER_NAME}"_README.md
+
+FILE_NAME="${FOLDER_NAME}"_README.md
+mv README.md "$FILE_NAME"
+# Add author info if needed
+if [[ $3 ]]; then
+  sed -i "$(printf "---\n author: ${3}\n ---")" "$FILE_NAME"
+fi
+
 cd ..
 }
 
@@ -23,6 +32,13 @@ clone_and_rename_readme https://github.com/SmartArmStack/docker-coppeliasim.git 
 clone_and_rename_readme https://github.com/MarinhoLab/sas_ur_control_template.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_kuka_control_template.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_robot_driver_copppeliasim.git main
+
+# Content from other authors (Not working yet, but one can dream)
+# JJQO
+# clone_and_rename_readme https://github.com/Adorno-Lab/sas_unitree_b1z1_control_template main "Juan Jose Quiroz Omana"
+
+# Print all contents.
+tree .
 
 cd .. # Get out of submodules
 cd scripts # Go back to `scripts`
