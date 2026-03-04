@@ -22,6 +22,7 @@ cd submodules
 clone_and_rename_readme https://github.com/SmartArmStack/docker-coppeliasim.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_ur_control_template.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_kuka_control_template.git main
+clone_and_rename_readme https://github.com/MarinhoLab/sas_robot_driver_copppeliasim.git main
 
 cd .. # Get out of submodules
 cd scripts # Go back to `scripts`
@@ -35,3 +36,5 @@ curl -Lo submodules/sas_ur_control_template/sas_urct_realrobot.mp4 https://githu
 # sas_kuka_control_template
 curl -Lo submodules/sas_kuka_control_template/sas_kct_simulation.mp4 https://github.com/user-attachments/assets/d0c00b59-8b45-4c11-9c85-6ec9807eda97
 curl -Lo submodules/sas_kuka_control_template/sas_kct_realrobot.mp4 https://github.com/user-attachments/assets/8340a929-487e-4ed7-b256-809f769bc446
+# sas_robot_driver_coppeliasim
+curl -Lo submodules/sas_robot_driver_coppeliasim/sas_rdcs_sample.mp4 https://github.com/user-attachments/assets/3d6222b8-e683-4039-ab72-d6a7ad08ba51
