@@ -31,7 +31,7 @@ cd submodules
 clone_and_rename_readme https://github.com/SmartArmStack/docker-coppeliasim.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_ur_control_template.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_kuka_control_template.git main
-clone_and_rename_readme https://github.com/MarinhoLab/sas_robot_driver_copppeliasim.git main
+clone_and_rename_readme https://github.com/MarinhoLab/sas_robot_driver_copppeliasim.git jazzy
 
 # Content from other authors (Not working yet, but one can dream)
 # JJQO
