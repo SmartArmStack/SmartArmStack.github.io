@@ -30,6 +30,7 @@ project:
         - file: submodules/docker-coppeliasim/docker-coppeliasim_README.md
     - title: "Modules"
       children:
+        - file: submodules/sas_robot_driver_coppeliasim/sas_force_sensor_bota_README.md
         - file: submodules/sas_robot_driver_coppeliasim/sas_robot_driver_coppeliasim_README.md
     - file: CHANGELOG.md
 
