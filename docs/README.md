@@ -98,7 +98,7 @@ sudo apt-get install ros-jazzy-sas-*
 :class: dropdown
 ### Click here for the LGPL packages information
 
-Copyright (C) 2025 Murilo M. Marinho.
+Copyright (C) 2025-26 Murilo M. Marinho.
 
 | Package                  | License | Description                                                                                                              |
 |--------------------------|---------|--------------------------------------------------------------------------------------------------------------------------|
@@ -111,6 +111,7 @@ Copyright (C) 2025 Murilo M. Marinho.
 | `sas_robot_driver_denso` | LGPL    | A `sas_robot_driver` implementation for DensoWave's bCap controlled robots                                               |
 | `sas_robot_driver_kuka`  | LGPL    | A `sas_robot_driver` implementation for Kuka (Sunrise cabinet, FRI)                                                      |
 | `sas_robot_driver_ur`    | LGPL    | A `sas_robot_driver` implementation for UR                                                                               |
+| `sas_force_sensor_bota`  | LGPL    | `ROS2` packages and GUI for Bota Systems sensors.                                                                        |
 ```
 
 ### CC BY-NC 4.0 Packages
