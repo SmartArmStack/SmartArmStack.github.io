@@ -33,6 +33,7 @@ clone_and_rename_readme https://github.com/MarinhoLab/sas_ur_control_template.gi
 clone_and_rename_readme https://github.com/MarinhoLab/sas_kuka_control_template.git main
 clone_and_rename_readme https://github.com/MarinhoLab/sas_robot_driver_coppeliasim.git jazzy
 clone_and_rename_readme https://github.com/MarinhoLab/sas_force_sensor_bota.git jazzy
+clone_and_rename_readme https://github.com/MarinhoLab/sas_robot_driver_gazebo.git jazzy
 
 # Content from other authors (Not working yet, but one can dream)
 # JJQO
