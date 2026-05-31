@@ -28,6 +28,10 @@ Please note that `sas` is originally based on developments [circa 2013](https://
 Affiliation with the University of Tokyo has ceased on December 2023 and this project is currently affiliated with
 the University of Manchester.
 
+## API 
+
+API Reference: https://marinholab.github.io/sas_devel/annotated.html
+
 ## Docker 
 [![Docker Pulls](https://img.shields.io/docker/pulls/murilomarinho/sas)](https://hub.docker.com/r/murilomarinho/sas)
 
