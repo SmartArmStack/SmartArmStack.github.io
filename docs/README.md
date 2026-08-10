@@ -130,7 +130,7 @@ Copyright (C) 2025-26 Murilo M. Marinho.
 ### CC BY-NC 4.0 Packages
 
 :::{tip}
-The CC BY-NC 4.0 packages are currently only available in `amd64` owing to GitHub limitations in private repositories.
+The CC BY-NC 4.0 packages are available in `amd64` and `arm64`.
 :::
 
 The command below will add and install the `sas` CC BY-NC 4.0 packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
