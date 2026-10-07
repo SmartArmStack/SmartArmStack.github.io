@@ -144,13 +144,23 @@ The CC BY-NC 4.0 packages are available in `amd64` and `arm64`.
 The command below will add and install the `sas` CC BY-NC 4.0 packages via `apt-get`. Please note that they depend on `sas` LGPL packages.
 
 ```bash
-curl -s --compressed "https://marinholab.github.io/sas_debian_builder_noncommercial/KEY.gpg" \
-| gpg --dearmor \
-| sudo tee /etc/apt/trusted.gpg.d/smartarmstack_cc_by_nc.gpg >/dev/null
-sudo curl -s --compressed -o /etc/apt/sources.list.d/smartarmstack_cc_by_nc.list \
-"https://marinholab.github.io/sas_debian_builder_noncommercial/smartarmstack_cc_by_nc.list"
-sudo apt update
-sudo apt-get install ros-jazzy-sas-*
+curl -fsSL https://raw.githubusercontent.com/MarinhoLab/sas-full/main/jazzy/install.sh | bash
+```
+
+```{note}
+:class: dropdown
+#### Click here for the installer options
+
+The script uses `sudo` only when it is not run as root. Options go to `bash`,
+e.g. `curl -fsSL <url> | bash -s -- -n`.
+
+| Option            | Effect                                                            |
+|-------------------|-------------------------------------------------------------------|
+| `-n`, `--dry-run` | Print the privileged steps instead of running them                |
+| `-v`, `--verbose` | Explain what is being reused/skipped                              |
+| `-h`, `--help`    | Show the help                                                     |
+
+`SAS_NC_APT_URL` overrides the base URL of the CC BY-NC 4.0 apt repository.
 ```
 
 ```{note}
