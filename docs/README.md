@@ -53,17 +53,11 @@ docker run -it murilomarinho/sas:lyrical
 
 ### One-line installer
 
-The recommended way to install the `sas` LGPL packages on Ubuntu. It adds the `sas` and OSRF Gazebo apt sources and installs the packages in a single step.
+The recommended way to install the `sas` LGPL packages on Ubuntu. 
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/SmartArmStack/smart_arm_stack_ROS2/lyrical/jazzy/install.sh | bash
 ```
-
-Run it as a normal user and it asks for your `sudo` password only when it needs to write under `/etc/apt`. It is idempotent, so re-running it is safe, and `-n` (`... | bash -s -- -n`) prints the privileged steps without running them.
-
-:::{note}
-The `ROS 2 Jazzy` and `DQ Robotics` pre-requisites below are still required: the installer does not add the `ROS 2` apt source. The CC BY-NC 4.0 packages further down are also not covered.
-:::
 
 ### Pre-requisites
 
